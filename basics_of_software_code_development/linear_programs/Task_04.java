@@ -6,11 +6,11 @@ import java.util.Scanner;
  *
  * @author Kiryl Matusevich
  * 
- * ЛИНЕЙНЫЕ ПРОГРАММЫ
- * Задача 4 - Дано действительное число R вида nnn.ddd 
- * (три цифровых разряда в дробной и целой частях). 
- * Поменять местами дробную и целую части числа и 
- * вывести полученное значение числа. 
+ * Р›РРќР•Р™РќР«Р• РџР РћР“Р РђРњРњР«
+ * Р—Р°РґР°С‡Р° 4 - Р”Р°РЅРѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ R РІРёРґР° nnn.ddd 
+ * (С‚СЂРё С†РёС„СЂРѕРІС‹С… СЂР°Р·СЂСЏРґР° РІ РґСЂРѕР±РЅРѕР№ Рё С†РµР»РѕР№ С‡Р°СЃС‚СЏС…). 
+ * РџРѕРјРµРЅСЏС‚СЊ РјРµСЃС‚Р°РјРё РґСЂРѕР±РЅСѓСЋ Рё С†РµР»СѓСЋ С‡Р°СЃС‚Рё С‡РёСЃР»Р° Рё 
+ * РІС‹РІРµСЃС‚Рё РїРѕР»СѓС‡РµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ С‡РёСЃР»Р°. 
  */
 
 public class Task_04 {
@@ -24,27 +24,27 @@ public class Task_04 {
         
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Введите действительное число вида nnn,ddd:");
+        System.out.println("Р’РІРµРґРёС‚Рµ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ РІРёРґР° nnn,ddd:");
         if (input.hasNextDouble()){
             number = input.nextDouble();
             input.close();
         } else {
-            System.out.println("Ошибка ввода! Перезапустите программу.");
+            System.out.println("РћС€РёР±РєР° РІРІРѕРґР°! РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ.");
             input.close();
             return;
         }
         
         numberNNN = (int)number;
         if (Math.abs(numberNNN) >= 1000){
-            System.out.println("Ошибка формата! Целая часть больше 999.");            
+            System.out.println("РћС€РёР±РєР° С„РѕСЂРјР°С‚Р°! Р¦РµР»Р°СЏ С‡Р°СЃС‚СЊ Р±РѕР»СЊС€Рµ 999.");            
             return;
         }
         
         numberDDD = (int)(number * 1000 - numberNNN * 1000);
         result = numberDDD + numberNNN / 1000.0;
         
-        //System.out.println("Целая часть: " + numberNNN);
-        //System.out.println("Дробная часть: " + numberDDD);
-        System.out.printf("Число вида ddd.nnn: %.3f \n", result);        
+        //System.out.println("Р¦РµР»Р°СЏ С‡Р°СЃС‚СЊ: " + numberNNN);
+        //System.out.println("Р”СЂРѕР±РЅР°СЏ С‡Р°СЃС‚СЊ: " + numberDDD);
+        System.out.printf("Р§РёСЃР»Рѕ РІРёРґР° ddd.nnn: %.3f \n", result);        
     }
 }
