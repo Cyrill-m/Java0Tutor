@@ -6,9 +6,9 @@ import java.util.Scanner;
  *
  * @author Kiryl Matusevich
  * 
- * ЛИНЕЙНЫЕ ПРОГРАММЫ
- * Задача 3 - Вычислить значение выражения по формуле 
- * (все переменные принимают действительные значения):
+ * Р›РРќР•Р™РќР«Р• РџР РћР“Р РђРњРњР«
+ * Р—Р°РґР°С‡Р° 3 - Р’С‹С‡РёСЃР»РёС‚СЊ Р·РЅР°С‡РµРЅРёРµ РІС‹СЂР°Р¶РµРЅРёСЏ РїРѕ С„РѕСЂРјСѓР»Рµ 
+ * (РІСЃРµ РїРµСЂРµРјРµРЅРЅС‹Рµ РїСЂРёРЅРёРјР°СЋС‚ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ):
  * (sin x + cos y)/(cos x - sin y) * tg xy
  * 
  */
@@ -20,37 +20,37 @@ public class Task_03 {
         double x;
         double y;
         double result;        
-        double resultZnam;  //результат знаменателя дроби
+        double resultZnam;  //СЂРµР·СѓР»СЊС‚Р°С‚ Р·РЅР°РјРµРЅР°С‚РµР»СЏ РґСЂРѕР±Рё
         
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Введите значение x:");
+        System.out.println("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ x:");
         if (input.hasNextDouble()){
             x = input.nextDouble();
         } else {
-            System.out.println("Ошибка ввода! Перезапустите программу.");
+            System.out.println("РћС€РёР±РєР° РІРІРѕРґР°! РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ.");
             input.close();
             return;
         }
                         
-        System.out.println("Введите значение y:");
+        System.out.println("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ y:");
         if (input.hasNextDouble()){
             y = input.nextDouble();
         } else {
-            System.out.println("Ошибка ввода! Перезапустите программу.");
+            System.out.println("РћС€РёР±РєР° РІРІРѕРґР°! РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ.");
             input.close();
             return;
         }
         
         resultZnam = Math.cos(x) - Math.sin(y);
         if (resultZnam == 0){
-            System.out.println("Ошибка: деление на ноль. Перезапустите программу.");
+            System.out.println("РћС€РёР±РєР°: РґРµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ. РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ.");
             input.close();
             return;
         }
         
         result = (Math.sin(x) + Math.cos(y))/resultZnam * Math.tan(x * y);
-        System.out.printf("Значение функции = %.3e \n", result);
+        System.out.printf("Р—РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё = %.3e \n", result);
         input.close();
     }    
 }
