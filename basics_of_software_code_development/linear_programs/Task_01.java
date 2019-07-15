@@ -21,35 +21,35 @@ public class Task_01 {
         
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Ââåäèòå çíà÷åíèå a:");
+        System.out.println("Введите значение a:");
         if (input.hasNextDouble()){
             a = input.nextDouble();
         } else {
-            System.out.println("Îøèáêà ââîäà! Ïåðåçàïóñòèòå ïðîãðàììó.");
+            System.out.println("Ошибка ввода! Перезапустите программу.");
             input.close();
             return;
         }
         
-        System.out.println("Ââåäèòå çíà÷åíèå b:");
+        System.out.println("Введите значение b:");
         if (input.hasNextDouble()){
             b = input.nextDouble();
         } else {
-            System.out.println("Îøèáêà ââîäà! Ïåðåçàïóñòèòå ïðîãðàììó.");
+            System.out.println("Ошибка ввода! Перезапустите программу.");
             input.close();
             return;
         }
         
-        System.out.println("Ââåäèòå çíà÷åíèå c:");
+        System.out.println("Введите значение c:");
         if (input.hasNextDouble()){
             c = input.nextDouble();
         } else {
-            System.out.println("Îøèáêà ââîäà! Ïåðåçàïóñòèòå ïðîãðàììó.");
+            System.out.println("Ошибка ввода! Перезапустите программу.");
             input.close();
             return;
         }
         
         z = ((a - 3) * b / 2) + c;
-        System.out.printf("Çíà÷åíèå ôóíêöèè z = %.2f \n", z);
+        System.out.printf("Значение функции z = %.2f \n", z);
         input.close();
     }
 }
