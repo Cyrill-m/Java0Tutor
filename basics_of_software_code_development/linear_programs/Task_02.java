@@ -6,9 +6,9 @@ import java.util.Scanner;
  *
  * @author Kiryl Matusevich
  * 
- * ЛИНЕЙНЫЕ ПРОГРАММЫ
- * Задача 2 - Вычислить значение выражения по формуле 
- * (все переменные принимают действительные значения):
+ * Р›РРќР•Р™РќР«Р• РџР РћР“Р РђРњРњР«
+ * Р—Р°РґР°С‡Р° 2 - Р’С‹С‡РёСЃР»РёС‚СЊ Р·РЅР°С‡РµРЅРёРµ РІС‹СЂР°Р¶РµРЅРёСЏ РїРѕ С„РѕСЂРјСѓР»Рµ 
+ * (РІСЃРµ РїРµСЂРµРјРµРЅРЅС‹Рµ РїСЂРёРЅРёРјР°СЋС‚ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ):
  * (b + SQRT(b^2 + 4ac))/2a - a^3 * c + b^-2
  * 
  */
@@ -21,54 +21,54 @@ public class Task_02 {
         double b;
         double c;
         double result;
-        double resultSqrt;  //результат для извлечения квадратного корня
-        double resultZnam;  //результат знаменателя дроби
+        double resultSqrt;  //СЂРµР·СѓР»СЊС‚Р°С‚ РґР»СЏ РёР·РІР»РµС‡РµРЅРёСЏ РєРІР°РґСЂР°С‚РЅРѕРіРѕ РєРѕСЂРЅСЏ
+        double resultZnam;  //СЂРµР·СѓР»СЊС‚Р°С‚ Р·РЅР°РјРµРЅР°С‚РµР»СЏ РґСЂРѕР±Рё
         
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Введите значение a:");
+        System.out.println("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ a:");
         if (input.hasNextDouble()){
             a = input.nextDouble();
         } else {
-            System.out.println("Ошибка ввода! Перезапустите программу.");
+            System.out.println("РћС€РёР±РєР° РІРІРѕРґР°! РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ.");
             input.close();
             return;
         }
                         
-        System.out.println("Введите значение b:");
+        System.out.println("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ b:");
         if (input.hasNextDouble()){
             b = input.nextDouble();
         } else {
-            System.out.println("Ошибка ввода! Перезапустите программу.");
+            System.out.println("РћС€РёР±РєР° РІРІРѕРґР°! РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ.");
             input.close();
             return;
         }
         
-        System.out.println("Введите значение c:");
+        System.out.println("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ c:");
         if (input.hasNextDouble()){
             c = input.nextDouble();
         } else {
-            System.out.println("Ошибка ввода! Перезапустите программу.");
+            System.out.println("РћС€РёР±РєР° РІРІРѕРґР°! РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ.");
             input.close();
             return;
         }
         
         resultSqrt = b * b + 4 * a * c;
         if (resultSqrt < 0){
-            System.out.println("Ошибка: корень из отрицательного числа. Перезапустите программу.");
+            System.out.println("РћС€РёР±РєР°: РєРѕСЂРµРЅСЊ РёР· РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРіРѕ С‡РёСЃР»Р°. РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ.");
             input.close();
             return;
         }
         
         resultZnam = 2 * a;
         if (resultZnam == 0){
-            System.out.println("Ошибка: деление на ноль. Перезапустите программу.");
+            System.out.println("РћС€РёР±РєР°: РґРµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ. РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ.");
             input.close();
             return;
         }
         
         result = (b + Math.sqrt(resultSqrt)) / resultZnam - Math.pow(a, 3) * c + Math.pow(b, -2) ;
-        System.out.printf("Значение функции = %.3f \n", result);
+        System.out.printf("Р—РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё = %.3f \n", result);
         input.close();
     }    
 }
