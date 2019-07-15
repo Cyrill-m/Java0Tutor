@@ -6,8 +6,8 @@ import java.util.Scanner;
  *
  * @author Kiryl Matusevich
  * 
- * ЛИНЕЙНЫЕ ПРОГРАММЫ
- * Задача 1 - Найдите значение функции: z = ( (a – 3 ) * b / 2) + c.
+ * Р›РРќР•Р™РќР«Р• РџР РћР“Р РђРњРњР«
+ * Р—Р°РґР°С‡Р° 1 - РќР°Р№РґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё: z = ( (a вЂ“ 3 ) * b / 2) + c.
  */
 
 public class Task_01 {
@@ -21,35 +21,35 @@ public class Task_01 {
         
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Введите значение a:");
+        System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ a:");
         if (input.hasNextDouble()){
             a = input.nextDouble();
         } else {
-            System.out.println("Ошибка ввода! Перезапустите программу.");
+            System.out.println("ГЋГёГЁГЎГЄГ  ГўГўГ®Г¤Г ! ГЏГҐГ°ГҐГ§Г ГЇГіГ±ГІГЁГІГҐ ГЇГ°Г®ГЈГ°Г Г¬Г¬Гі.");
             input.close();
             return;
         }
         
-        System.out.println("Введите значение b:");
+        System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ b:");
         if (input.hasNextDouble()){
             b = input.nextDouble();
         } else {
-            System.out.println("Ошибка ввода! Перезапустите программу.");
+            System.out.println("ГЋГёГЁГЎГЄГ  ГўГўГ®Г¤Г ! ГЏГҐГ°ГҐГ§Г ГЇГіГ±ГІГЁГІГҐ ГЇГ°Г®ГЈГ°Г Г¬Г¬Гі.");
             input.close();
             return;
         }
         
-        System.out.println("Введите значение c:");
+        System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ c:");
         if (input.hasNextDouble()){
             c = input.nextDouble();
         } else {
-            System.out.println("Ошибка ввода! Перезапустите программу.");
+            System.out.println("ГЋГёГЁГЎГЄГ  ГўГўГ®Г¤Г ! ГЏГҐГ°ГҐГ§Г ГЇГіГ±ГІГЁГІГҐ ГЇГ°Г®ГЈГ°Г Г¬Г¬Гі.");
             input.close();
             return;
         }
         
         z = ((a - 3) * b / 2) + c;
-        System.out.printf("Значение функции z = %.2f \n", z);
+        System.out.printf("Г‡Г­Г Г·ГҐГ­ГЁГҐ ГґГіГ­ГЄГ¶ГЁГЁ z = %.2f \n", z);
         input.close();
     }
 }
