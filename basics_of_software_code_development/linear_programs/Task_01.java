@@ -42,6 +42,7 @@ public class Task_01 {
         System.out.println("Введите значение c:");
         if (input.hasNextDouble()){
             c = input.nextDouble();
+            input.close();
         } else {
             System.out.println("Ошибка ввода! Перезапустите программу.");
             input.close();
@@ -49,7 +50,6 @@ public class Task_01 {
         }
         
         z = ((a - 3) * b / 2) + c;
-        System.out.printf("Значение функции z = %.2f \n", z);
-        input.close();
+        System.out.printf("Значение функции z = %.2f \n", z);        
     }
 }
