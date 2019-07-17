@@ -36,6 +36,7 @@ public class Task_03 {
         System.out.println("Введите значение y:");
         if (input.hasNextDouble()){
             y = input.nextDouble();
+            input.close();
         } else {
             System.out.println("Ошибка ввода! Перезапустите программу.");
             input.close();
@@ -44,13 +45,11 @@ public class Task_03 {
         
         resultZnam = Math.cos(x) - Math.sin(y);
         if (resultZnam == 0){
-            System.out.println("Ошибка: деление на ноль. Перезапустите программу.");
-            input.close();
+            System.out.println("Ошибка: деление на ноль. Перезапустите программу.");            
             return;
         }
         
         result = (Math.sin(x) + Math.cos(y))/resultZnam * Math.tan(x * y);
-        System.out.printf("Значение функции = %.3e \n", result);
-        input.close();
+        System.out.printf("Значение функции = %.3e \n", result);        
     }    
 }
