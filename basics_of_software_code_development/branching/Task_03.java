@@ -6,9 +6,9 @@ import java.util.Random;
  *
  * @author Kiryl Matusevich
  * 
- * ВЕТВЛЕНИЯ
- * Задача 3 - Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3). 
- * Определить, будут ли они расположены на одной прямой. 
+ * Р’Р•РўР’Р›Р•РќРРЇ
+ * Р—Р°РґР°С‡Р° 3 - Р”Р°РЅС‹ С‚СЂРё С‚РѕС‡РєРё Рђ(С…1,Сѓ1), Р’(С…2,Сѓ2) Рё РЎ(С…3,Сѓ3). 
+ * РћРїСЂРµРґРµР»РёС‚СЊ, Р±СѓРґСѓС‚ Р»Рё РѕРЅРё СЂР°СЃРїРѕР»РѕР¶РµРЅС‹ РЅР° РѕРґРЅРѕР№ РїСЂСЏРјРѕР№. 
  */
 
 public class Task_03 {
@@ -34,12 +34,9 @@ public class Task_03 {
         rezX = Math.round((double)(x3 - x1)/(x2 - x1)*1000)/1000.0;
         rezY = Math.round((double)(y3 - y1)/(y2 - y1)*1000)/1000.0;
         
-        otvet = (rezX == rezY) ? "лежат" : "не лежат";
+        otvet = (rezX == rezY) ? "Р»РµР¶Р°С‚" : "РЅРµ Р»РµР¶Р°С‚";
         
-        System.out.printf("Точки А(%d,%d), В(%d,%d) и С(%d,%d)\n", x1, y1, x2, y2, x3, y3);
-        //System.out.println("rezX " + rezX);
-        //System.out.println("rezY " + rezY);
-        System.out.printf("%s на одной прямой\n", otvet);
-    }
-    
+        System.out.printf("РўРѕС‡РєРё Рђ(%d,%d), Р’(%d,%d) Рё РЎ(%d,%d)\n", x1, y1, x2, y2, x3, y3);        
+        System.out.printf("%s РЅР° РѕРґРЅРѕР№ РїСЂСЏРјРѕР№\n", otvet);
+    }    
 }
