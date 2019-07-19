@@ -6,8 +6,8 @@ import java.util.Random;
  *
  * @author Kiryl Matusevich
  * 
- * ÂÅÒÂËÅÍÈß
- * Çàäà÷à 2 - Íàéòè max{min(a, b), min(c, d)}. 
+ * Ğ’Ğ•Ğ¢Ğ’Ğ›Ğ•ĞĞ˜Ğ¯
+ * Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° 2 - ĞĞ°Ğ¹Ñ‚Ğ¸ max{min(a, b), min(c, d)}. 
  */
 
 public class Task_02 {
