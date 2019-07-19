@@ -6,10 +6,10 @@ import java.util.Scanner;
  *
  * @author Kiryl Matusevich
  * 
- * ВЕТВЛЕНИЯ
- * Задача 5 - Вычислить значение функции F(x)= 
- * x^2 - 3x + 9, если x <= 3
- * 1/(x^3 + 6), если x > 3.
+ * Р’Р•РўР’Р›Р•РќРРЇ
+ * Р—Р°РґР°С‡Р° 5 - Р’С‹С‡РёСЃР»РёС‚СЊ Р·РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё F(x)= 
+ * x^2 - 3x + 9, РµСЃР»Рё x <= 3
+ * 1/(x^3 + 6), РµСЃР»Рё x > 3.
  */
 
 public class Task_05 {
@@ -21,12 +21,12 @@ public class Task_05 {
         
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Введите значение аргумента x:");
+        System.out.println("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ Р°СЂРіСѓРјРµРЅС‚Р° x:");
         if (input.hasNextDouble()){
             x = input.nextDouble();
             input.close();
         } else {
-            System.out.println("Ошибка ввода! Перезапустите программу.");
+            System.out.println("РћС€РёР±РєР° РІРІРѕРґР°! РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ.");
             input.close();
             return;
         }
@@ -37,7 +37,6 @@ public class Task_05 {
             func = x*x - 3*x + 9;
         }
         
-        System.out.printf("значение функции F(x)= %.3e\n", func);
-    }
-    
+        System.out.printf("Р·РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё F(x)= %.3e\n", func);
+    }    
 }
