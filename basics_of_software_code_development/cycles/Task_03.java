@@ -4,8 +4,8 @@ package basics_of_software_code_development.cycles;
  *
  * @author Kiryl Matusevich
  * 
- * ЦИКЛЫ
- * Задача 3 - Найти сумму квадратов первых ста чисел. 
+ * Р¦РРљР›Р«
+ * Р—Р°РґР°С‡Р° 3 - РќР°Р№С‚Рё СЃСѓРјРјСѓ РєРІР°РґСЂР°С‚РѕРІ РїРµСЂРІС‹С… СЃС‚Р° С‡РёСЃРµР». 
  */
 
 public class Task_03 {
@@ -19,6 +19,6 @@ public class Task_03 {
             sum = sum + i*i;
         }
         
-        System.out.println("сумма квадратов первых ста чисел " + sum);
+        System.out.println("СЃСѓРјРјР° РєРІР°РґСЂР°С‚РѕРІ РїРµСЂРІС‹С… СЃС‚Р° С‡РёСЃРµР» " + sum);
     }    
 }
