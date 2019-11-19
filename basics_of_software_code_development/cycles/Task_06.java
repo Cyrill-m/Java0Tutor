@@ -4,11 +4,21 @@ package basics_of_software_code_development.cycles;
  *
  * @author Kiryl Matusevich
  * 
- * ЦИКЛЫ
- * Задача 6 - Вывести на экран соответствий между символами и их 
- * численными обозначениями в памяти компьютера.
+ * Г–Г€ГЉГ‹Г›
+ * Г‡Г Г¤Г Г·Г  6 - Г‚Г»ГўГҐГ±ГІГЁ Г­Г  ГЅГЄГ°Г Г­ Г±Г®Г®ГІГўГҐГІГ±ГІГўГЁГ© Г¬ГҐГ¦Г¤Гі Г±ГЁГ¬ГўГ®Г«Г Г¬ГЁ ГЁ ГЁГµ 
+ * Г·ГЁГ±Г«ГҐГ­Г­Г»Г¬ГЁ Г®ГЎГ®Г§Г­Г Г·ГҐГ­ГЁГїГ¬ГЁ Гў ГЇГ Г¬ГїГІГЁ ГЄГ®Г¬ГЇГјГѕГІГҐГ°Г .
  */
 
 public class Task_06 {
     
+    public static void main(String[] args) {
+        
+        final int CHAR_ANSII = 127;
+        final int CHAR_ISO = 255;
+        final int CHAR_UNICODE = 65536;
+        
+        for (int i = 0; i <= CHAR_ANSII; i++) {
+            System.out.println("РЎРёРјРІРѕР»: " + (char)i + "\tРљРѕРґ: " + i);
+        }
+    }
 }
