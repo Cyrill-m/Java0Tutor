@@ -6,9 +6,9 @@ import java.util.Arrays;
  *
  * @author Kiryl Matusevich
  * 
- * ÎÄÍÎÌÅÐÍÛÅ ÌÀÑÑÈÂÛ
- * Çàäà÷à 1 - Â ìàññèâ A [N] çàíåñåíû íàòóðàëüíûå ÷èñëà. 
- * Íàéòè ñóììó òåõ ýëåìåíòîâ, êîòîðûå êðàòíû äàííîìó Ê.
+ * ОДНОМЕРНЫЕ МАССИВЫ
+ * Задача 1 - В массив A [N] занесены натуральные числа. 
+ * Найти сумму тех элементов, которые кратны данному К.
  */
 
 public class Task_01 {
@@ -26,10 +26,10 @@ public class Task_01 {
             kratn = a[i] % k;
             if (kratn == 0){
                 sum = sum + a[i];
-                System.out.println("a[" + i + "]=" + a[i] + "\têðàòíî k=" + k);
+                System.out.println("a[" + i + "]=" + a[i] + "\tкратно k=" + k);
             }
         }
         
-        System.out.println("Ñóììà ýëåìåíòîâ = " + sum);
-    }    
+        System.out.println("Сумма элементов = " + sum);
+    }
 }
