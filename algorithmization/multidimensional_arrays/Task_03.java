@@ -7,16 +7,16 @@ import java.util.Random;
  *
  * @author Kiryl Matusevich
  * 
- * МАССИВЫ МАССИВОВ
- * Задача 3 - Дана матрица. Вывести k-ю строку и p-й столбец матрицы.
+ * РњРђРЎРЎРР’Р« РњРђРЎРЎРР’РћР’
+ * Р—Р°РґР°С‡Р° 3 - Р”Р°РЅР° РјР°С‚СЂРёС†Р°. Р’С‹РІРµСЃС‚Рё k-СЋ СЃС‚СЂРѕРєСѓ Рё p-Р№ СЃС‚РѕР»Р±РµС† РјР°С‚СЂРёС†С‹.
  */
 
 public class Task_03 {
     
     public static void main(String[] args) {
         int[][] a;
-        int n, m; //размерность матрицы
-        int k, p; //искомая строка и столбец
+        int n, m; //СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ РјР°С‚СЂРёС†С‹
+        int k, p; //РёСЃРєРѕРјР°СЏ СЃС‚СЂРѕРєР° Рё СЃС‚РѕР»Р±РµС†
         Random rand;
         
         n = 5;
@@ -26,27 +26,27 @@ public class Task_03 {
         a = new int[n][m];
         rand = new Random();
         
-        //инициализация элементов массива случайными числами
+        //РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
         for(int i = 0; i < a.length; i++){
             for(int j = 0; j < a[i].length; j++){
                 a[i][j] = rand.nextInt(10);
             }            
         }
         
-        //вывод элементов матрицы на экран
+        //РІС‹РІРѕРґ СЌР»РµРјРµРЅС‚РѕРІ РјР°С‚СЂРёС†С‹ РЅР° СЌРєСЂР°РЅ
         for(int[] a1 : a) {
             System.out.println(Arrays.toString(a1));
         }
         
-        //вывод k-й строки
-        System.out.println("Строка: " + k);
+        //РІС‹РІРѕРґ k-Р№ СЃС‚СЂРѕРєРё
+        System.out.println("РЎС‚СЂРѕРєР°: " + k);
         for(int i = 0; i < a[k - 1].length; i++){
             System.out.print(a[k - 1][i] + " ");
         }
         System.out.println();
         
-        //вывод p-ого столбца
-        System.out.println("Столбец: " + p);
+        //РІС‹РІРѕРґ p-РѕРіРѕ СЃС‚РѕР»Р±С†Р°
+        System.out.println("РЎС‚РѕР»Р±РµС†: " + p);
         for(int i = 0; i < a.length; i++){
             System.out.print(a[i][p - 1] + " ");
         }
