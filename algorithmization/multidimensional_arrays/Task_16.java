@@ -23,7 +23,7 @@ public class Task_16 {
         int[][] a;
         int n;        
         
-        n = 7; // 
+        n = 7; // размерность
         a = new int[n][n];        
         
         for(int i = 0; i < a.length; i ++){
