@@ -10,4 +10,3 @@
 *  "linear_array" - одномерные массивы
 *  "multidimensional_arrays" - массивы массивов
 *  "linear_array_sorting" - одномерные массивы сортировки
-*  "decomposition" - декомпозиция с использованием методов
