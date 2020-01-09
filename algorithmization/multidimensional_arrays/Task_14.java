@@ -1,17 +1,44 @@
 package algorithmization.multidimensional_arrays;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  *
  * @author Kiryl Matusevich
  * 
- * МАССИВЫ МАССИВОВ
- * Задача 14 - Сформировать случайную матрицу m x n, 
- * состоящую из нулей и единиц, причем в каждом столбце число единиц 
- * равно номеру столбца.
+ * РњРђРЎРЎРР’Р« РњРђРЎРЎРР’РћР’
+ * Р—Р°РґР°С‡Р° 14 - РЎС„РѕСЂРјРёСЂРѕРІР°С‚СЊ СЃР»СѓС‡Р°Р№РЅСѓСЋ РјР°С‚СЂРёС†Сѓ m x n, 
+ * СЃРѕСЃС‚РѕСЏС‰СѓСЋ РёР· РЅСѓР»РµР№ Рё РµРґРёРЅРёС†, РїСЂРёС‡РµРј РІ РєР°Р¶РґРѕРј СЃС‚РѕР»Р±С†Рµ С‡РёСЃР»Рѕ РµРґРёРЅРёС† 
+ * СЂР°РІРЅРѕ РЅРѕРјРµСЂСѓ СЃС‚РѕР»Р±С†Р°.
  */
 
 public class Task_14 {
     
+    public static void main(String[] args) {
+        int[][] a;
+        int m, n; //СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ РјР°С‚СЂРёС†С‹
+        Random rand;
+        
+        rand = new Random();
+        m = 9; //С‡РёСЃР»Рѕ СЃС‚СЂРѕРє
+        n = 7; //С‡РёСЃР»Рѕ СЃС‚РѕР»Р±С†РѕРІ
+        //m = n + rand.nextInt(4);
+        a = new int[m][n];
+        
+        for(int j = 0; j < n; j++){            
+            int i = 0;
+            while(i < (j + 1)){
+                int ind = rand.nextInt(m);
+                if(a[ind][j] == 0){
+                    a[ind][j] = 1;
+                    i++;
+                }
+            }
+        }
+        
+        for(int[] a1: a){
+            System.out.println(Arrays.toString(a1));
+        }
+    }
 }
